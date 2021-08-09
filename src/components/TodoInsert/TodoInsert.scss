@@ -1,0 +1,20 @@
+.TodoInsert {
+    //border-bottom: 2px solid #bebebe;
+    display: flex;
+
+    input {
+        height: 30px;
+        width: 92%;
+        color: rgb(211, 211, 211);
+        background-color: rgb(65, 63, 77);
+
+        &::placeholder {
+            color: rgb(211, 211, 211);
+        }
+    }
+
+    button {
+        margin-left: 3px;
+        width: 6%;
+    }
+}

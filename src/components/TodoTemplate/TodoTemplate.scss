@@ -1,0 +1,18 @@
+.TodoTemplate {
+    width: 500px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    .app-title {
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(65, 63, 77);
+    }
+    .content {
+        margin: 10px 0 0;
+        //border: 2px solid #bebebe;
+    }
+}
+
