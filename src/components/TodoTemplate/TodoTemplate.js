@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 const TodoTemplate = ({children}) => {
     return (
         <div className={cx('TodoTemplate')}>
-            <div className={cx('app-title')}>일정관리</div>
+            <div className={cx('app-title')}>TODO LIST</div>
             <div className={cx('content')}>{children}</div>
         </div>
     );
