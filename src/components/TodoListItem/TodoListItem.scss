@@ -19,6 +19,12 @@
             width: 94%;
             display: inline-block;
 
+            &.checked {
+                svg {
+                  color: #50e3a4;
+                }
+            }
+
             .text {
                 display: inline-block;
                 margin-left: 15px;
@@ -31,6 +37,10 @@
             width: 5%;
             display: inline-block;
             text-align: right;
+
+            svg {
+                color: #FF6B6A;
+              }
         }
     }
 }

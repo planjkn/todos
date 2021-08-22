@@ -3,18 +3,35 @@
     display: flex;
 
     input {
-        height: 30px;
-        width: 92%;
-        color: rgb(211, 211, 211);
-        background-color: rgb(65, 63, 77);
+        // height: 30px;
+        // width: 92%;
+        // color: rgb(211, 211, 211);
+        flex: 1;
+        line-height: 1.5;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #aaa;
+        color: #333;
+        font-size: 17px;
 
-        &::placeholder {
-            color: rgb(211, 211, 211);
-        }
+        // &::placeholder {
+
+        // }
     }
 
     button {
-        margin-left: 3px;
-        width: 6%;
+        // margin-left: 3px;
+        // width: 6%;
+        display: flex;
+        padding-right: 0;
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+
+        svg {
+            color: #50e3a4;
+            font-size: 23px;
+          }
     }
 }

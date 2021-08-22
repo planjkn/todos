@@ -1,17 +1,53 @@
 .TodoTemplate {
     width: 500px;
     background-color: white;
-    margin: 0 auto;
-    margin-top: 50px;
+    margin: 150px auto 0;
+    padding: 50px 80px;
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.2);
+    
+    .app_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4rem;
+    
+        .date_area {
+          display: flex;
+          color: #333;
+          font-family: "Bellota";
+    
+          .left_col {
+            .day_area {
+              margin-right: 5px;
+              font-weight: 700;
+              font-size: 40px;
+            }
+          }
+          .right_col {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 14px;
+    
+            .month_area {
+              font-family: "Roboto";
+            }
+            .year_area {
+              line-height: 1;
+            }
+          }
+        }
+        .app-title {
+            font-family: 'Noto Sans KR';
+            font-size: 25px;
+            font-weight: bold;
+            color: rgb(65, 63, 77);
+        }
+      }
 
-    .app-title {
-        text-align: center;
-        font-size: 25px;
-        font-weight: bold;
-        color: rgb(65, 63, 77);
-    }
+    
     .content {
-        margin: 10px 0 0;
+        margin: 20px 0 0;
         //border: 2px solid #bebebe;
     }
 }

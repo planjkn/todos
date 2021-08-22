@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { MdAdd } from 'react-icons/md';
+import { MdAddCircleOutline } from 'react-icons/md';
 import styles from './TodoInsert.scss';
 import classNames from 'classnames/bind';
 
@@ -27,7 +27,7 @@ const TodoInsert = ( {onInsert} ) => {
                     onChange={onChange}
             />
             <button type="submit">
-                <MdAdd />
+                <MdAddCircleOutline />
             </button>
         </form>
     );
