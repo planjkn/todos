@@ -17,6 +17,13 @@
         // &::placeholder {
 
         // }
+        
+        &::-webkit-input-placeholder {
+            color: #c5c5c5;
+          }
+        &::-ms-input-placeholder {
+            color: #c5c5c5;
+          }
     }
 
     button {

@@ -30,8 +30,8 @@ const TodoList = ({ todos, onRemove, onToggle }) => {
     return (
         <List 
             className="TodoList"
-            width={500}     // 전체 크기 width
-            height={500}    // 전체 크기 height
+            width={400}     // 전체 크기 width
+            height={320}    // 전체 크기 height
             rowCount={todos.length}  // item 항목 갯수
             rowHeight={30}      // 1개 항목당 높이
             rowRenderer={rowRenderer}    // 항목 렌더링에 쓰는 함수
