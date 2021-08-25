@@ -33,7 +33,7 @@ const TodoList = ({ todos, onRemove, onToggle }) => {
             width={400}     // 전체 크기 width
             height={320}    // 전체 크기 height
             rowCount={todos.length}  // item 항목 갯수
-            rowHeight={30}      // 1개 항목당 높이
+            rowHeight={40}      // 1개 항목당 높이
             rowRenderer={rowRenderer}    // 항목 렌더링에 쓰는 함수
             list={todos}        // 배열의 이름
             style={{ outline: 'none' }}     // List를 이용하는데 기본으로 적용되어있는 outline을 none으로 설정했음.
