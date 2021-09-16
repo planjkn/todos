@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from './TodoTemplate.scss';
 import classNames from 'classnames/bind';
 import axios from 'axios';
+import DatePicker from '../date-picker';
+
 
 const cx = classNames.bind(styles);
 
@@ -43,13 +45,16 @@ const TodoTemplate = ({children}) => {
         <div className={cx('TodoTemplate')}>
             <div className="app_header">
                 <div className="date_area">
-                    <div className="left_col">
+
+                    <DatePicker/>
+
+                    {/* <div className="left_col">
                         <div className="day_area">{day}</div>
                     </div>
                     <div className="center_col">
                         <div className="month_area">{month}</div>
                         <div className="year_area">{year}</div>
-                    </div>
+                    </div> */}
                     <div className="right_col">
                         <img 
                             src={imgSrc}
