@@ -9,11 +9,11 @@ const cx = classNames.bind(styles);
 
 const TodoTemplate = ({children}) => {
 
-    const date = new Date();
-    const year = date.getFullYear();
-    const monthNames = ["JAN", "FAB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
-    const month = monthNames[date.getMonth()];
-    const day = date.getDate();
+    // const date = new Date();
+    // const year = date.getFullYear();
+    // const monthNames = ["JAN", "FAB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+    // const month = monthNames[date.getMonth()];
+    // const day = date.getDate();
 
     const apiKey = "65a81888180f2ee46a9ba2501b104012";
     const city = "Busan";

@@ -28,7 +28,7 @@ const TodoList = ({ todos, onRemove, onToggle }) => {
     );
 
     return (
-        <List 
+        <List
             className="TodoList"
             width={400}     // 전체 크기 width
             height={320}    // 전체 크기 height

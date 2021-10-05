@@ -5,13 +5,14 @@ import TodoList from './components/TodoList';
 
 function createBulkTodos() {
   const array = [];
-  for (let i = 1; i <= 5; i++) {
+  /*for (let i = 1; i <= 5; i++) {
     array.push({
       id: i,
       text: `할 일 ${i}`,
       checked: false,
+      date: new Date().getFullYear()+"-"+(new Date().getMonth()+1)+ "-"+new Date().getDate(),
     });
-  }
+  }*/
   return array;
 }
 
@@ -19,7 +20,12 @@ function createBulkTodos() {
 function todoReducer(todos, action) {	// todoReducer함수 만듬.
   switch (action.type) {
     case `INSERT`:
-      return todos.concat(action.todo);
+      todos.concat(action.todo); 
+
+      if(new Date().getFullYear()+"-"+(new Date().getMonth()+1)+ "-"+new Date().getDate() == action.todo.date)return todos.concat(action.todo);
+      else{
+        return todos;
+      }
     case `REMOVE`:
       return todos.filter(todo => todo.id !== action.id);
     case `TOGGLE`:
@@ -106,10 +112,13 @@ const App = () => {
       const todo = {
         id: nextId.current,
         text,
-        checked: false
+        checked: false,
+        date: new Date().getFullYear()+"-"+(new Date().getMonth()+1)+ "-"+new Date().getDate(),
       };
       dispatch({ type: 'INSERT', todo});
       nextId.current +=1;
+      console.log("투두리스트");
+      console.log(todos);
     },
     []
   );
