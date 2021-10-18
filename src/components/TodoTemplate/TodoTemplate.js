@@ -7,7 +7,7 @@ import DatePicker from '../date-picker';
 
 const cx = classNames.bind(styles);
 
-const TodoTemplate = ({children}) => {
+const TodoTemplate = (props) => {
 
     // const date = new Date();
     // const year = date.getFullYear();
@@ -46,7 +46,7 @@ const TodoTemplate = ({children}) => {
             <div className="app_header">
                 <div className="date_area">
 
-                    <DatePicker/>
+                    <DatePicker startDate={props.startDate} setStartDate={props.setStartDate} />
 
                     {/* <div className="left_col">
                         <div className="day_area">{day}</div>
@@ -71,7 +71,7 @@ const TodoTemplate = ({children}) => {
                 </div>
                 <div className={cx('app-title')}>TODO LIST</div>
             </div>
-            <div className={cx('content')}>{children}</div>
+            <div className={cx('content')}>{props.children}</div>
         </div>
     );
 };
