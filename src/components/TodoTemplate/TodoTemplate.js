@@ -19,7 +19,7 @@ const TodoTemplate = (props) => {
     const city = "Busan";
     const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
     
-    //axios 라이브러리
+    //날씨 라이브러리
     const [icon, setIcon] = useState('');
     axios.get(apiUrl)
         .then(responseData => {

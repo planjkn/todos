@@ -172,10 +172,10 @@ const App = () => {
     //   <TodoList todos={todos} onRemove={onRemove} onToggle={onToggle} />
     // </TodoTemplate>
     <TodoTemplate startDate={startDate} setStartDate={setStartDate}>
-    {console.log("22222" +startDate)}
-    <TodoInsert onInsert={onInsert} />
-    <TodoList todos={todos.filter(todo => todo.date === startDate.getFullYear()+"-"+(startDate.getMonth()+1)+ "-"+startDate.getDate())} onRemove={onRemove} onToggle={onToggle} />
-  </TodoTemplate>
+      {console.log("22222" +startDate)}
+      <TodoInsert onInsert={onInsert} />
+      <TodoList todos={todos.filter(todo => todo.date === startDate.getFullYear()+"-"+(startDate.getMonth()+1)+ "-"+startDate.getDate())} onRemove={onRemove} onToggle={onToggle} />
+    </TodoTemplate>
   );
 
 }
