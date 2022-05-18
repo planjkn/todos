@@ -30,8 +30,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "hompage":"https://planjkn.github.io/todos/",
-  
   "eslintConfig": {
     "extends": [
       "react-app",
